@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-HF-icon_basket {
+    width: 36px;
+    height: 25px;
+    background-position: -10px -10px;
+}
+
+.sprite-HF-icon_delivery {
+    width: 44px;
+    height: 25px;
+    background-position: -10px -55px;
+}
+
+.sprite-HF-icon_favs {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -100px;
+}
+
+.sprite-HF-icon_favs-h {
+    width: 15px;
+    height: 14px;
+    background-position: -10px -145px;
+}
+
+.sprite-HF-icon_grid {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -179px;
+}
+
+.sprite-HF-icon_heart {
+    width: 29px;
+    height: 25px;
+    background-position: -10px -224px;
+}
+
+.sprite-HF-icon_home {
+    width: 21px;
+    height: 18px;
+    background-position: -10px -269px;
+}
+
+.sprite-HF-icon_maestro {
+    width: 51px;
+    height: 31px;
+    background-position: -10px -307px;
+}
+
+.sprite-HF-icon_marker {
+    width: 15px;
+    height: 25px;
+    background-position: -10px -358px;
+}
+
+.sprite-HF-icon_mastercard {
+    width: 49px;
+    height: 31px;
+    background-position: -10px -403px;
+}
+
+.sprite-HF-icon_metro {
+    width: 28px;
+    height: 25px;
+    background-position: -10px -454px;
+}
+
+.sprite-HF-icon_open {
+    width: 31px;
+    height: 25px;
+    background-position: -10px -499px;
+}
+
+.sprite-HF-icon_price {
+    width: 26px;
+    height: 25px;
+    background-position: -10px -544px;
+}
+
+.sprite-HF-icon_sale {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -589px;
+}
+
+.sprite-HF-icon_search {
+    width: 30px;
+    height: 30px;
+    background-position: -10px -634px;
+}
+
+.sprite-HF-icon_ship {
+    width: 24px;
+    height: 30px;
+    background-position: -10px -684px;
+}
+
+.sprite-HF-icon_shop {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -734px;
+}
+
+.sprite-HF-icon_visa {
+    width: 49px;
+    height: 30px;
+    background-position: -10px -779px;
+}
+
+.sprite-HF-icon_visa-el {
+    width: 48px;
+    height: 30px;
+    background-position: -10px -829px;
+}
+
+.sprite-HF-icon_wallet {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -879px;
+}
