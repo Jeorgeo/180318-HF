@@ -8,6 +8,7 @@
 # Typography
 # Header
 # Content
+  ## Product
   ## Shop-card
 # Footer
 
@@ -137,6 +138,10 @@ img {
   color: #ffab42;
 }
 
+.red-color {
+  color: #fa0505;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -198,6 +203,7 @@ img {
 
 .main-logo {
   display: flex;
+  align-items: flex-end;
   width: 100%;
   max-width: 480px;
   margin-bottom: 0.5em;
@@ -207,12 +213,16 @@ img {
   margin-left: 10px;
 }
 
+.main-logo img {
+  max-width: 55px;
+}
+
 .logo_title h1 {
   margin-top: 0.8em;
   margin-bottom: 5px;
   text-align: center;
   font-size: 1.8em;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .logo_title p {
@@ -221,7 +231,7 @@ img {
   text-align: center;
   font-size: 1.1em;
   color: #9e0b0f;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .middle-header .contacts {
@@ -351,6 +361,40 @@ img {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.breadcrumb li {
+  display: block;
+  padding: 0.5em 10px;
+  text-transform: uppercase;
+  font-family: 'Exo2-Medium', 'Arial', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-left: 2px solid #e6e6e6;
+}
+
+.breadcrumb li:first-child {
+  border-left: none;
+}
+
+.breadcrumb li a:hover,
+.breadcrumb li a.passive-link {
+  color: #f7941d;
+}
+
+.breadcrumb-home {
+  display: block;
+  width: 21px;
+  height: 18px;
+  background: url('../img/HF_sprite.png') no-repeat -10px -269px;
+}
+
 
 aside .list-group {
   display: flex;
@@ -600,8 +644,266 @@ main .swiper-viewport {
 
 /*--------------------------------------------------------------
 # Content
+  ## Product
+--------------------------------------------------------------*/
+
+.thumbnails,
+.product__basic,
+.product__description,
+.product__review {
+  width: 100%;
+  max-width: 585px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.thumbnails .image-additional {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.thumbnails li {
+  display: block;
+  width: 100%;
+  max-width: 386px;
+}
+
+.thumbnails .image-additional li {
+  display: block;
+  width: 25%;
+  margin: 1em;
+}
+
+.product__basic-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.product__basic-title h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Exo2-Medium', 'Arial', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.product__basic-title p {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Exo2-Regular', 'Arial', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.product__basic-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.product__basic-content span {
+  display: block;
+  margin: 0;
+  font-family: 'Exo2-Medium', 'Arial', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #333333;
+}
+
+span.basic-conten_price {
+  position: relative;
+  width: 180px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+span.basic-conten_price::after {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 26px;
+  height: 25px;
+  background: url('../img/HF_sprite.png') no-repeat -10px -544px;
+  content: '';
+}
+
+span.basic-conten_quant {
+  width: 83px;
+  margin-right: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.product__basic-content .basic-conten_cart {
+  position: relative;
+  display: block;
+  width: 195px;
+  padding: 12px 0 12px 70px;
+  text-transform: uppercase;
+  font-family: 'Exo2-Medium', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #fbaf5d;
+  background-color: #ffffff;
+  border: 2px solid #fbaf5d;
+  box-sizing: border-box;
+}
+
+.product__basic-content .basic-conten_cart::after {
+  position: absolute;
+  top: 7px;
+  left: 25px;
+  width: 36px;
+  height: 25px;
+  background: url('../img/HF_sprite.png') no-repeat -10px -10px;
+  content: '';
+}
+
+.product__basic-content .basic-conten_cart:hover,
+.product__basic-content .basic-conten_cart:active {
+  cursor: pointer;
+  color: #000000;
+}
+
+.product__basic-content p {
+  display: block;
+  width: 100%;
+  font-family: 'Exo2-Light', 'Arial', sans-serif;
+  font-size: 14px;
+  margin: 36px 0;
+}
+
+.main-logo_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 263px;
+  margin: 1em 0;
+}
+
+.product__basic-content .main-logo_cards {
+  margin-right: 30px;
+}
+
+.main-logo_card {
+  display: block;
+  background-image: url('../img/HF_sprite.png');
+  background-repeat: no-repeat;
+}
+
+.main-logo_card.visa {
+  width: 49px;
+  height: 30px;
+  background-position: -10px -779px;
+}
+
+.main-logo_card.master {
+  width: 49px;
+  height: 31px;
+  background-position: -10px -403px;
+}
+
+.main-logo_card.maestro {
+  width: 51px;
+  height: 31px;
+  background-position: -10px -307px;
+}
+
+.main-logo_card.visa-el {
+  width: 48px;
+  height: 30px;
+  background-position: -10px -829px;
+}
+
+.product__basic-content .basic-conten_favor {
+  position: relative;
+  display: block;
+  width: 180px;
+  padding: 8px 0;
+  padding-left: 42px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #ffffff;
+}
+
+.product__basic-content .basic-conten_favor::after {
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 5px;
+  width: 29px;
+  height: 25px;
+  background: url('../img/HF-icon_heart-red.png') no-repeat 0 0;
+  content: '';
+}
+
+.product__basic-content .basic-conten_favor:hover,
+.product__basic-content .basic-conten_favor:active {
+  cursor: pointer;
+  color: #ef1313;
+}
+
+.basic-services {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.basic-services .basic-service {
+  position: relative;
+  display: block;
+  width: 263px;
+  margin: 0;
+  padding-left: 45px;
+  text-transform: uppercase;
+  font-family: 'Exo2-Medium', 'Arial', sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.basic-service::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background-image: url('../img/HF_sprite.png');
+  background-repeat: no-repeat;
+}
+
+.basic-service.delivery::after {
+  width: 31px;
+  height: 25px;
+  background-position: -10px -499px;
+}
+
+.basic-service.store::after {
+  width: 24px;
+  height: 30px;
+  background-position: -10px -684px;
+}
+
+/*--------------------------------------------------------------
+# Content
   ## Shop-card
 --------------------------------------------------------------*/
+
 .shop-card {
   display: flex;
   flex-direction: row;
@@ -733,56 +1035,22 @@ footer .container {
   color: #ffab42;S
 }
 
+footer .main-logo {
+  max-width: 263px;
+}
+
 .footer-cols .main-logo {
   margin-top: 1em;
 }
 
 .footer-cols .main-logo h1 {
-  margin-top: 44px;
-  font-size: 25px;
+  margin-top: 35px;
+  font-size: 22px;
 }
 
 .footer-cols .main-logo p {
   font-size: 9px;
   color: #f3be84;
-}
-
-footer .main-logo_cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  margin: 1em 0;
-}
-
-footer .main-logo_card {
-  display: block;
-  background-image: url('../img/HF_sprite.png');
-  background-repeat: no-repeat;
-}
-
-footer .main-logo_card.visa {
-  width: 49px;
-  height: 30px;
-  background-position: -10px -779px;
-}
-
-footer .main-logo_card.master {
-  width: 49px;
-  height: 31px;
-  background-position: -10px -403px;
-}
-
-footer .main-logo_card.maestro {
-  width: 51px;
-  height: 31px;
-  background-position: -10px -307px;
-}
-
-footer .main-logo_card.visa-el {
-  width: 48px;
-  height: 30px;
-  background-position: -10px -829px;
 }
 
 footer .production {
@@ -807,6 +1075,10 @@ footer .production {
 
   main .container {
     display: flex;
+  }
+
+  .product .container {
+    flex-wrap: wrap;
   }
 
   /*--------------------------------------------------------------
@@ -869,6 +1141,23 @@ footer .production {
     max-width: 845px;
     margin-top: 55px;
     margin-bottom: 4em;
+  }
+
+  /*--------------------------------------------------------------
+  # Content
+    ## Product
+  --------------------------------------------------------------*/
+
+  .thumbnails {
+    flex-direction: row-reverse;
+  }
+
+  .thumbnails .image-additional {
+    flex-direction: column;
+  }
+
+  .thumbnails .image-additional li {
+    width: 50%;
   }
 
   /*--------------------------------------------------------------
